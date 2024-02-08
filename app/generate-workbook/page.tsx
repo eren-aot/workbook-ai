@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 
-import { languageData, levelData } from '@/schemas/schemas';
+import { languageData, levelData } from '@/schemas/data';
+import TopicsInput from '@/components/TopicsInput';
 
 const GenerateWorkBook = () => {
 
@@ -50,8 +52,8 @@ const GenerateWorkBook = () => {
                             You can add up to 3 topics, or leave empty for a random selection.
                         </p>
                         
+                        <TopicsInput />
                     </div>
-
                 </div>
             </div>
         </main>
