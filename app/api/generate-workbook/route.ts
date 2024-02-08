@@ -10,7 +10,7 @@ export async function POST(req: Request) {
         const { prompt, language, topics, levels } = body;
 
         const openai = new OpenAI({
-            apiKey: "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"
+            apiKey: process.env.OPENAI_API_KEY
         })
 
         if (!language) {
